@@ -1,0 +1,10 @@
+name: nexortex-os
+description: Custom operating system Nexortex with Supernova boot animation and PS5 UI.
+base-image: ghcr.io/ublue-os/bazzite
+image-version: latest
+
+modules:
+  - type: default-chroot-commands
+    commands:
+      - echo "Конфигуриране на Nexortex OS..."
+      - systemctl set-default graphical.target
